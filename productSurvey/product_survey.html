@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury brand FeedBack</title>
+</head>
+<body>
+    <h1>Welcome to Luxury Brand Products FeedBack</h1>
+    <h2>Provide Feedback</h2>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Jhon Doe" required><br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" placeholder="18" required><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="jhonDoe@email.com" required> <br>
+    <label for="job">Occupation:</label>
+    <input type="text" name="job" id="ojb" placeholder="Designer" required><br>
+    <label for="designation">Designation:</label>
+    <input type="text" name="designation" id="designation" placeholder="Your designation" required> <br>
+    <label for="prodtype">Product Type:</label>
+    <select name="prodtype" id="prodtype" required>
+        <option value="perfume">Perfume</option>
+        <option value="cream">Cream</option>
+        <option value="oils">Oils</option>
+    </select><br>
+    <label for="feedText">Feedback:</label>
+    <textarea name="feedText" id="feedText" cols="30" rows="5" placeholder="Enter your feedback here" required></textarea> <br>
+    <button id="subBtn">Submit Feedback</button>
+    <hr>
+    <div id="userInfo" style="display: none;">
+        <h2>User Information:</h2>
+        <p>
+            Name: <span id="userName"></span>
+        </p>
+        <p>
+            Age: <span id="userAge"></span>
+        </p>
+        <p>
+            Email: <span id="userMail"></span>
+        </p>
+        <p>
+            Job: <span id="userJob"></span>
+        </p>
+        <p>
+            Designation: <span id="userDesignation"></span>
+        </p>
+        <p>
+            FeedBack for <span id="userProduct"></span>: <span id="userFeedback"></span>
+        </p>
+    </div>
+    <script src="product_survey.js"></script>
+</body>
+</html>
