@@ -73,4 +73,8 @@ h1 {
     color: #3498db;
     border: none;
     font-weight: 900;
+    border-radius: 2rem;
+}
+#startBtn:disabled{
+    background-color: #c2c2c2;
 }
